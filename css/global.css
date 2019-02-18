@@ -5,6 +5,8 @@
     font-weight: bold;
 }
 
+
+
 * { 
     font-family: 'My Lucida', Console;
 }
@@ -21,6 +23,7 @@ a {
 .wrapper {
     padding: 25px 0;
 }
+
 
 body > header {
     margin-bottom: 20px;
