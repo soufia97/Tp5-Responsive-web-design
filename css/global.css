@@ -5,7 +5,9 @@
     font-weight: bold;
 }
 
-
+html{
+  font-size:16px ;
+}
 
 * { 
     font-family: 'My Lucida', Console;
@@ -21,14 +23,14 @@ a {
 }
 
 .wrapper {
-    padding: 25px 0;
+    padding: 1.5rem 0;
 }
 
 
 body > header {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background: white;
-    box-shadow: 1px 0px 8px rgb(200, 200, 200);
+    box-shadow: 0.0625rem 0px 0.5rem rgb(200, 200, 200);
 }
 
 header .logo-search form  {
@@ -39,14 +41,23 @@ header .user {
     float: right;
 }
 
+@media(max-width:767px) {
+header > input {
+    display : none; 
+}
+header .share {
+    display : none;
+}  
+}
+
 header .user a {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #89949b;
-    padding-top: 5px;
+    padding-top: 0.3125rem;
 }
 
 main h2 {
-    margin-top: 4px;
+    margin-top: 0.25rem;
 }
 
 
@@ -57,13 +68,13 @@ main article {
 h3 {
     color: #b8c3c9;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 0.6875rem;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 nav ul li a { 
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: normal;
     color: #828c92;
 }
@@ -73,46 +84,46 @@ nav ul li a:hover {
 }
 
 nav ul li {
-    margin-top: 5px;
+    margin-top: 0.3125rem;
 }
 
 main header aside img {
-    border: 1px solid #dadada;
+    border: 0.0625rem solid #dadada;
     border-radius: 50%;
-    box-shadow: 0 0 5px #cecece;
+    box-shadow: 0 0 0.3125rem #cecece;
 }
 
 nav ul li:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 h1 {
     color: #4b5c66;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: normal;
-    margin: 0 0 8px 0;
+    margin: 0 0 0.5rem 0;
 }
 
 .name p { 
     color: #a0aab1;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .name p img { 
-    margin-left: 12px;
+    margin-left: 0.75rem;
 }
 
 
 .stats-links {
     color: #4b5c66;
-    font-size: 12px;
-    padding: 15px 0px 10px 0px;
-    border-bottom: 1px solid #e1e6e9;
-    margin-bottom: 20px;
+    font-size: 0.75rem;
+    padding: 0.9375 0px 0.625rem 0px;
+    border-bottom: 0.0625rem solid #e1e6e9;
+    margin-bottom: 1.25rem;
 }
 
 .stats-links span, .stats-links a {
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 .stats-links a:last-child {
@@ -120,13 +131,13 @@ h1 {
 }
 
 .stats-links a {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: normal;
     color: #4b5c66;
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
     color: #4b5c66;
 }
@@ -138,15 +149,15 @@ header form {
 input.search {
     background: url("../img/icon/search.png") #ebeff1 no-repeat 8px;
     box-shadow: none;
-    height: 28px;
+    height: 1.75rem;
     width: 100%;
-    font-size: 13px;
-    padding: 3px 6px 3px 25px;
+    font-size: 0.8125rem;
+    padding: 0.1875rem 0.375rem 0.1875rem 1.5625rem;
     border: 1px solid #d0dde9;
     margin: 0;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     top: 11px;
-    box-shadow: inset 1px 1px 5px #d5d5d5;
+    box-shadow: inset 0.0625rem 0.0625rem 0.3125rem #d5d5d5;
 }
 
 input.submit {
@@ -154,13 +165,13 @@ input.submit {
 }
 
 .station {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #008fd5;
-    border-radius: 5px;
-    border: 1px solid #b8c3c9;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #b8c3c9;
     cursor: pointer;
-    padding: 7px 10px 7px 30px;
-    box-shadow: 1px 1px #d5d5d5;
+    padding: 0.4375rem 0.625rem 0.4375rem 1.875rem;
+    box-shadow: 0.0625rem 0.0625rem #d5d5d5;
     background: url("../img/icon/station.png") no-repeat 8px;
     transition: all 0.4s;
 }
@@ -173,43 +184,43 @@ input.submit {
 
 
 #albums article {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #89949b;
-    margin: 10px 0;
+    margin: 0.625rem 0;
 }
 
 #albums article img {
-    border: 1px solid #cbcbcb;
+    border: 0.0625rem solid #cbcbcb;
     transition: all 0.3s;
     width: 100%;
 }
 
 #albums article img:hover {
-    box-shadow: 0 0 15px #848484;
+    box-shadow: 0 0 0.9375rem #848484;
     transform: scale(1.1) rotate(-3deg);
 }
 
 #albums article figcaption {
     color: #4b5c66;
-    margin-top: 6px;
+    margin-top: 0.375rem;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 #albums article .artist, #albums article .count {
-    margin-top: 4px;
+    margin-top: 0.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
 #albums .explicit {
     color: #ff5d5d;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 
 nav.browse a, nav.music a {
-    padding-left: 20px;
-    padding-top: 2px;
+    padding-left: 1.25rem;
+    padding-top: 0.125rem;
 }
 
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0px; }
